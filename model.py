@@ -68,15 +68,16 @@ class Vislice:
     def __init__(self):
         self.igre = {}
         self.max_id = 0
+
     def prost_id_igre(self):
         self.max_id += 1
         return self.max_id
+
     def nova_igra(self):
         nov_id = self.prost_id_igre()
         sveza_igra = nova_igra()
 
         self.igre[nov_id] = (sveza_igra, ZACETEK)
-
         return nov_id
 
     def ugibaj(self, id_igre, crka):
