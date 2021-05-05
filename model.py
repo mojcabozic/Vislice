@@ -3,9 +3,9 @@ PRAVILNA_CRKA, PONOVLJENA_CRKA, NAPACNA_CRKA = '+', 'o', '-'
 ZMAGA, PORAZ = 'W', 'X'
 ZACETEK = "S"
 class Igra:
-    def __init__(self, geslo, crke=[]):
+    def __init__(self, geslo, crke=None):
         self.geslo = geslo
-        self.crke = crke
+        self.crke = crke or list()
     
     def napacne_crke(self):             #izpeljan seznam
         return [c for c in self.crke if c.upper() not in self.geslo.upper()] 
@@ -73,7 +73,7 @@ class Vislice:
         return self.max_id
     def nova_igra(self):
         nov_id = self.prost_id_igre()
-        sveza_igra = nova_igra(bazen_besed)
+        sveza_igra = nova_igra()
 
         self.igre[nov_id] = (sveza_igra, ZACETEK)
 
