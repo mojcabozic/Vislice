@@ -1,10 +1,7 @@
-<!DOCTYPE html>
+% import model
+% rebase('base.tpl')
 
-<html>
-<head>
-    <meta charset="UTF-8">
-</head>
-<body>
+
 
   <h1>Vislice</h1>
   <h2>Igraš igro:</h2>
@@ -47,7 +44,3 @@
     </form>
     
 
-
-</body>
-
-</html>

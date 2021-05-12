@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-    <meta charset="UTF-8">
-</head>
-
-<body>
+% rebase('base.tpl')
 
   <h1>Vislice</h1>
 
@@ -20,6 +12,5 @@
   <form action="/igra/" method="post">
     <button type="submit"> Nova igra </button>
   </form>
-</body>
 
-</html>
+
